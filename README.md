@@ -1,1 +1,1 @@
-type anottation functions
+type anottated functions
