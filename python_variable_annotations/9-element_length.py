@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Annotate the below functions parameters 
+"""Annotate the below functions parameters
 and return values with the appropriate types
 
 def element_length(lst):
