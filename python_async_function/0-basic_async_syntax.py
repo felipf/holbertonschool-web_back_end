@@ -7,27 +7,11 @@ seconds and eventually returns it.
 
 Use the random module."""
 import asyncio
-import random
-from typing import Generator
+from random import uniform
 
 
-async def async_generator() -> Generator[float, None, None]:
-    """
-    Returns:
-        Generator[float, None, None]: [description]
-    """
-    for _ in range(10):
-        await asyncio.sleep(1)
-        yield random.uniform(0, 10)
-
-
-async def main():
-    """
-    Returns:
-        [type]: [description]
-    """
-    async for i in async_generator():
-        print(i)
-
-if __name__ == "__main__":
-    asyncio.run(main())
+async def wait_random(max_delay: int = 10) -> float:
+    """Wait for a random delay between 0 and max_delay seconds"""
+    i = uniform(0, max_delay)
+    await asyncio.sleep(i)
+    return i
