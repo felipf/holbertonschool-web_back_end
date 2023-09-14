@@ -12,6 +12,7 @@ i.e. the firstpage is page 1."""
 import csv
 import math
 from typing import List
+from typing import Tuple
 
 
 class Server:
