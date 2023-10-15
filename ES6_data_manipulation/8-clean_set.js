@@ -1,4 +1,4 @@
-function cleanSet(set, startString) {
+export default function cleanSet(set, startString) {
   const cleanedValues = [];
 
   if (typeof startString !== 'string' || startString === '') {
